@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Suaip</title>
+
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="dist/suaip.min.css">
+        <style type="text/css">
+            html, body {
+                height: 100%;
+            }
+
+            body {
+                background: #222;
+                margin: 0;
+                overflow: hidden;
+                overflow-y: hidden;
+
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 38px;
+            }
+
+            .suaip-card p {
+                text-align: center;
+            }
+
+            #one {
+                background: #74CEB7;
+                color: #004056;
+            }
+
+            #two {
+                background: #004056;
+            }
+
+            #three {
+                background: #2C858D;
+            }
+
+            #four {
+                background: red;
+            }
+
+            #five {
+                background: purple;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div class="suaip-card" id="one">
+                <p>Card Up Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper efficitur lorem, sed molestie tortor maximus eu. Suspendisse eu rhoncus magna. Ut mattis arcu metus, nec posuere mauris egestas sed. Sed eget mi sed turpis bibendum vulputate porta vel dui. Duis ornare neque erat. Quisque magna dolor, varius non lorem vel, interdum dictum leo. Vestibulum ultrices pulvinar nibh. Suspendisse in leo at ipsum tincidunt sodales in a nulla. Vivamus semper ante quis tortor tempus maximus. Nam accumsan tortor porta, malesuada nisi sit amet, accumsan mi. Nulla facilisi. Donec scelerisque luctus risus quis varius. Aliquam ut elit mauris. Aenean non laoreet leo, quis commodo diam. Donec mattis egestas urna sollicitudin ullamcorper.</p>
+            </div>
+
+            <div class="suaip-card" id="two">
+                <p>Card Center Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper efficitur lorem, sed molestie tortor maximus eu. Suspendisse eu rhoncus magna. Ut mattis arcu metus, nec posuere mauris egestas sed. Sed eget mi sed turpis bibendum vulputate porta vel dui. Duis ornare neque erat. Quisque magna dolor, varius non lorem vel, interdum dictum leo. Vestibulum ultrices pulvinar nibh. Suspendisse in leo at ipsum tincidunt sodales in a nulla. Vivamus semper ante quis tortor tempus maximus. Nam accumsan tortor porta, malesuada nisi sit amet, accumsan mi. Nulla facilisi. Donec scelerisque luctus risus quis varius. Aliquam ut elit mauris. Aenean non laoreet leo, quis commodo diam. Donec mattis egestas urna sollicitudin ullamcorper.</p>
+            </div>
+
+            <div class="suaip-card" id="three">
+                <p>Card Down Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper efficitur lorem, sed molestie tortor maximus eu. Suspendisse eu rhoncus magna. Ut mattis arcu metus, nec posuere mauris egestas sed. Sed eget mi sed turpis bibendum vulputate porta vel dui. Duis ornare neque erat. Quisque magna dolor, varius non lorem vel, interdum dictum leo. Vestibulum ultrices pulvinar nibh. Suspendisse in leo at ipsum tincidunt sodales in a nulla. Vivamus semper ante quis tortor tempus maximus. Nam accumsan tortor porta, malesuada nisi sit amet, accumsan mi. Nulla facilisi. Donec scelerisque luctus risus quis varius. Aliquam ut elit mauris. Aenean non laoreet leo, quis commodo diam. Donec mattis egestas urna sollicitudin ullamcorper.</p>
+            </div>
+
+            <div class="suaip-card" id="four">
+                <p>Card Left Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper efficitur lorem, sed molestie tortor maximus eu. Suspendisse eu rhoncus magna. Ut mattis arcu metus, nec posuere mauris egestas sed. Sed eget mi sed turpis bibendum vulputate porta vel dui. Duis ornare neque erat. Quisque magna dolor, varius non lorem vel, interdum dictum leo. Vestibulum ultrices pulvinar nibh. Suspendisse in leo at ipsum tincidunt sodales in a nulla. Vivamus semper ante quis tortor tempus maximus. Nam accumsan tortor porta, malesuada nisi sit amet, accumsan mi. Nulla facilisi. Donec scelerisque luctus risus quis varius. Aliquam ut elit mauris. Aenean non laoreet leo, quis commodo diam. Donec mattis egestas urna sollicitudin ullamcorper.</p>
+            </div>
+
+            <div class="suaip-card" id="five">
+                <p>Card Right Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper efficitur lorem, sed molestie tortor maximus eu. Suspendisse eu rhoncus magna. Ut mattis arcu metus, nec posuere mauris egestas sed. Sed eget mi sed turpis bibendum vulputate porta vel dui. Duis ornare neque erat. Quisque magna dolor, varius non lorem vel, interdum dictum leo. Vestibulum ultrices pulvinar nibh. Suspendisse in leo at ipsum tincidunt sodales in a nulla. Vivamus semper ante quis tortor tempus maximus. Nam accumsan tortor porta, malesuada nisi sit amet, accumsan mi. Nulla facilisi. Donec scelerisque luctus risus quis varius. Aliquam ut elit mauris. Aenean non laoreet leo, quis commodo diam. Donec mattis egestas urna sollicitudin ullamcorper.</p>
+            </div>
+        </div>
+
+        <script src="lib/hammer.js/hammer.min.js"></script>
+        <script src="dist/suaip.min.js"></script>
+        <script>
+            window.onload = function () {
+                Suaip.init({
+                    before: document.getElementById('one'),
+                    active: document.getElementById('two'),
+                    after: document.getElementById('three'),
+                    left: document.getElementById('four'),
+                    right: document.getElementById('five')
+                });
+            };
+        </script>
+    </body>
+</html>
