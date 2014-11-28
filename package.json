@@ -1,6 +1,6 @@
 {
   "name": "suaip",
-  "version": "0.0.0",
+  "version": "0.5.0",
   "description": "suaip is a lightweight library based on Hammer.js for implementing swipe cards on your application",
   "main": "src/suaip.js",
   "scripts": {
@@ -22,10 +22,11 @@
     "url": "https://github.com/mvader/suaip/issues"
   },
   "homepage": "https://github.com/mvader/suaip",
-  "dependencies": {
+  "devDependencies": {
     "gulp": "latest",
     "gulp-uglify": "latest",
     "gulp-less": "latest",
-    "gulp-cssmin": "latest"
+    "gulp-cssmin": "latest",
+    "gulp-rename": "latest"
   }
 }

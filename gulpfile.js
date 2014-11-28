@@ -3,19 +3,22 @@
 var gulp = require('gulp'),
 	cssmin = require('gulp-cssmin'),
 	less = require('gulp-less'),
-	uglify = require('gulp-uglify');
+	uglify = require('gulp-uglify'),
+	rename = require('gulp-rename');
 
 gulp.task('less', function () {
 	gulp.src('src/suaip.less')
 		.pipe(less())
 		.pipe(cssmin())
-		.pipe(gulp.dest('dist/css/suaip.min.css'));
+		.pipe(rename('suaip.min.css'))
+		.pipe(gulp.dest('dist'));
 });
 
 gulp.task('js', function () {
 	gulp.src('src/suaip.js')
 		.pipe(uglify())
-		.pipe(gulp.dest('dist/js/suaip.min.js'));
+		.pipe(rename('suaip.min.js'))
+		.pipe(gulp.dest('dist'));
 });
 
 gulp.task('less_watch', function () {
