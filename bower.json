@@ -1,0 +1,30 @@
+{
+  "name": "suaip",
+  "version": "0.5.0",
+  "authors": [
+    "José Miguel Molina <hi@mvader.me>"
+  ],
+  "description": "suaip is a lightweight library based on Hammer.js for implementing swipe cards on your application",
+  "main": "src/suaip.js",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "swipe",
+    "cards",
+    "ux",
+    "gestures"
+  ],
+  "dependencies": {
+    "hammer.js": "1.1.3"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/mvader/suaip",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
